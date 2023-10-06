@@ -9,6 +9,7 @@ import { ref, onMounted, nextTick } from "vue";
 const slaw = ref(null);
 onMounted(async () => {
   await nextTick(); // Wait for the next DOM update
+
   console.log(slaw.value.offsetWidth);
 });
 </script>
